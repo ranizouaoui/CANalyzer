@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="589.0" prefWidth="964.0" stylesheets="@../Classes/application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserOption1">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox prefHeight="60.0" prefWidth="655.0" spacing="11.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="387.0" text="Home" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="12.0" left="12.0" top="6.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Classes/icons/icons8-home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="12.0" />
+               </padding>
+            </HBox>
+         </top>
+         <left>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="443.0" prefWidth="380.0" BorderPane.alignment="TOP_LEFT">
+               <children>
+                  <VBox maxHeight="1.7976931348623157E308" prefHeight="407.0" prefWidth="330.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" prefHeight="49.0" prefWidth="330.0" style="-fx-background-color: #e5e5e5;" text="FEATURES" textAlignment="CENTER" textFill="#181818" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane prefWidth="330.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Accordion fx:id="accordion" prefHeight="404.0" prefWidth="355.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
+                                 <panes>
+                                    <TitledPane fx:id="firstTitledPane" maxWidth="1.7976931348623157E308" prefHeight="252.0" prefWidth="338.0" text="CAN Frame Reading">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Effortlessly read and analyze CAN frames from your vehicle's network. Gain insights into the data flow of your car's communication." wrappingWidth="287.63275146484375" />
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane text="CAN Frame Sending">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Send custom CAN frames to interact with your vehicle's network. Test and simulate different scenarios with ease." wrappingWidth="274.03277587890625" />
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane text="Data Logging">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Capture and save CAN data to log files for future analysis. Maintain a record of your car's communication history." wrappingWidth="274.03277587890625" />
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane text="CAN Frame Control">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Take full control of CAN frames, including filtering, masking, and frame manipulation. Customize the communication to suit your needs." wrappingWidth="274.03277587890625" />
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane text="Diagnostics">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Perform comprehensive vehicle diagnostics using OBD-II protocols. Identify and resolve issues within your car's systems." wrappingWidth="274.03277587890625" />
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane text="Real-time Monitoring">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor CAN communication in real-time. Visualize the data flow, error frames, and system performance on the go." wrappingWidth="274.03277587890625" />
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane text="Multi-Platform Compatibility">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Access the application from different platforms, including desktop and mobile devices. Stay connected wherever you go." wrappingWidth="274.03277587890625" />
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane text="User-friendly Interface">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enjoy a user-friendly interface that simplifies complex tasks. Navigate through features effortlessly." wrappingWidth="274.03277587890625" />
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                 </panes>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </Accordion>
+                           </children>
+                           <padding>
+                              <Insets top="3.0" />
+                           </padding>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="405.0" prefWidth="470.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="463.0" prefWidth="478.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-background-color: #e5e5e5;" text="GET STARTED" textAlignment="CENTER" textFill="#181818" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                           <children>
+                              <TabPane fx:id="tabPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="423.0" prefWidth="584.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <tabs>
+                                    <Tab text="Video 1">
+                                       <content>
+                                          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="308.0" prefWidth="584.0">
+                                             <children>
+                                                <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="70.0" text="Video 1 : Our application allows you to control and configure your ECU's in just one click" VBox.vgrow="ALWAYS" />
+                                                      <WebView fx:id="webView" prefHeight="354.0" prefWidth="532.0" VBox.vgrow="ALWAYS" />
+                                                      <GridPane VBox.vgrow="ALWAYS">
+                                                         <columnConstraints>
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                         </columnConstraints>
+                                                         <rowConstraints>
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                         </rowConstraints>
+                                                         <children>
+                                                            <Button fx:id="customprevious" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Previous" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Button fx:id="custombutton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#switchToTab2" text="Next" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Button>
+                                                         </children>
+                                                      </GridPane>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Video 2">
+                                       <content>
+                                          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="308.0" prefWidth="584.0">
+                                             <children>
+                                                <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="70.0" text="Video 2 : Our application allows you to read the data received on the serial (COMx)" VBox.vgrow="ALWAYS" />
+                                                      <WebView fx:id="webView1" prefHeight="354.0" prefWidth="532.0" VBox.vgrow="ALWAYS" />
+                                                      <GridPane VBox.vgrow="ALWAYS">
+                                                         <columnConstraints>
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                         </columnConstraints>
+                                                         <rowConstraints>
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                         </rowConstraints>
+                                                         <children>
+                                                            <Button fx:id="previous1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#switchToTab1" text="Previous" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Button fx:id="next1" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Next" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Button>
+                                                         </children>
+                                                      </GridPane>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                 </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

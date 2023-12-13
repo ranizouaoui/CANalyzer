@@ -1,0 +1,209 @@
+.button{
+-fx-background-color :   #2b9ff2;
+-fx-background-radius : 0em;
+}
+
+.button:pressed {
+-fx-background-color :  #4696EF;	
+}
+.button:focused{
+-fx-background-color :#41bdf4;
+-fx-border-width : 0px 0px 0px 3px;
+}
+.button:hover {
+    -fx-background-color: #41bdf4; /* Change the background color on hover */
+    -fx-background-radius: 0em;
+}
+
+.button2{
+-fx-background-color :  #6F5CC2;
+-fx-background-radius : 1em;
+}
+
+
+.button2:pressed {
+-fx-background-color :  #4696EF;
+-fx-background-radius : 1em;
+	
+}
+.button2:focused{
+-fx-background-color :  #02aaf5;
+-fx-background-radius : 1em;
+}
+.table-view .column-header,
+.table-view .column-header-background .filler {
+ -fx-cell-size: 20; 
+ -fx-background-color: #FFFFFF; 
+ 
+}
+.table-view .column-header .Label{
+-fx-text-fill: #41bdf4;
+-fx-alignment: CENTER_LEFT;}
+ 
+ .table-view .cell{
+-fx-cell-size: 30;
+-fx-alignment: center-left;  
+-fx-text-fill: #000000;  
+-fx-alignment: CENTER;
+  	 }
+
+  	 .table-row-cell:selected {
+  	  -fx-background-color: #d4d4d4;	 	
+  	 }
+  	  .table-row-cell:selected .text {
+  	  -fx-fill :#141414;	 	
+  	 }
+ 	 
+
+/* Normal state style */
+#loginfield {
+    -fx-background-color: #2B9FF2;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #efeded;
+}
+
+/* Hover state style */
+#loginfield:hover {
+    -fx-background-color: #3BA8FF; /* Change background color on hover */
+    -fx-text-fill: #ffffff; /* Change text color on hover */
+    -fx-border-color: #2B9FF2; /* Optional: Add a border color on hover */
+    -fx-border-radius: 15px;
+}
+#cancelfield {
+    -fx-background-color: #2B9FF2;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #efeded;
+}
+
+/* Hover state style */
+#cancelfield:hover {
+    -fx-background-color: #3BA8FF; /* Change background color on hover */
+    -fx-text-fill: #ffffff; /* Change text color on hover */
+    -fx-border-color: #2B9FF2; /* Optional: Add a border color on hover */
+    -fx-border-radius: 15px;
+}
+/* CustomAccordion.css */
+/* Styling the Accordion itself */
+.accordion {
+    -fx-background-color: #f2f2f2;
+    -fx-color: rgba(0, 0, 0, 0.87);
+}
+
+/* Styling TitledPanes */
+.titled-pane {
+    -fx-pref-width: 100%; /* Make the TitledPanes fill the width of the Accordion */
+    -fx-min-height: 100px; /* Define the min height for TitledPanes */
+    -fx-background-color: white;
+}
+
+.titled-pane .title {
+    -fx-background-color: #2b9ff2;
+    -fx-text-fill: white;
+    -fx-padding: 6 20px;
+    -fx-font-size: 12pt; /* Adjust the font size for the TitledPane title */
+}
+
+.titled-pane .content {
+    -fx-padding: 10px 8px;
+    -fx-font-size: 11pt;
+    -fx-text-fill: rgba(0, 0, 0, 0.54);
+}
+
+/* Styling TitledPanes on hover */
+.titled-pane:hover {
+    -fx-background-color: #ffffff; /* Change background color on hover */
+}
+
+/* Styling open TitledPane */
+.titled-pane:expanded .title {
+    -fx-border-color: transparent;
+    -fx-background-color: #2b9ff2;
+}
+
+/* Styling close TitledPane */
+.titled-pane:collapsed .title {
+    -fx-border-color: #e5e5e5;
+}
+/* Style for the button "Previous" */
+#customprevious {
+    -fx-background-color: #2b9ff2; /* Background color */
+    -fx-text-fill: white; /* Text color */
+	-fx-background-radius: 20 0 0 20;
+    /* Hover effect */
+    -fx-background-color: #1e85e0; /* Change background color on hover */
+}
+
+#customprevious:pressed {
+    -fx-background-color: #1669c7; /* Change background color when pressed */
+}
+
+/* Style for the button "Next" */
+#custombutton {
+    -fx-background-color: #4caf50; /* Background color */
+    -fx-text-fill: white; /* Text color */
+	-fx-background-radius: 0 20 20 0;
+    /* Hover effect */
+    -fx-background-color: #399c44; /* Change background color on hover */
+}
+#custombutton:pressed {
+    -fx-background-color: #297c38; /* Change background color when pressed */
+}
+/* Style for the button "Previous" */
+#previous1 {
+    -fx-background-color: #2b9ff2; /* Background color */
+    -fx-text-fill: white; /* Text color */
+	-fx-background-radius: 20 0 0 20;
+    /* Hover effect */
+    -fx-background-color: #1e85e0; /* Change background color on hover */
+}
+
+#previous1:pressed {
+    -fx-background-color: #1669c7; /* Change background color when pressed */
+}
+
+/* Style for the button "Next" */
+#next1 {
+    -fx-background-color: #4caf50; /* Background color */
+    -fx-text-fill: white; /* Text color */
+	-fx-background-radius: 0 20 20 0;
+    /* Hover effect */
+    -fx-background-color: #399c44; /* Change background color on hover */
+}
+#next1:pressed {
+    -fx-background-color: #297c38; /* Change background color when pressed */
+}
+.xxx{
+	 -fx-background-color: #2b9ff2; /* Change background color when pressed */
+	 -fx-background-radius: 0 40 0 0;
+}
+#b1{
+	 -fx-background-radius: 0 40 0 0;
+}
+/* Style for the legend label */
+#legend-label {
+    -fx-font-size: 16px; /* Customize the font size */
+    -fx-text-fill: #2b9ff2; /* Customize the text color */
+    -fx-padding: 5px; /* Add padding for spacing */
+}
+
+/* Style for the custom fieldset (AnchorPane) */
+#custom-fieldset {
+    -fx-border-color: #2b9ff2; /* Customize the border color */
+    -fx-border-width: 2px; /* Customize the border width */
+    -fx-background-color: #f5f5f5; /* Customize the background color */
+    -fx-border-radius: 15px;
+}
+#Sendframebutton{
+	    -fx-background-radius: 40;
+	    
+}
+.Sendframebutton:pressed {
+-fx-background-color :  #4696EF;	
+}
+.Sendframebutton:focused{
+-fx-background-color :#4696EF;
+}
+.Sendframebutton:hover {
+    -fx-background-color: #41bdf4; /* Change the background color on hover */
+    -fx-background-radius: 0em;
+}

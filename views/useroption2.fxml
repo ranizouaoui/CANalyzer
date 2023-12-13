@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="622.0" prefWidth="934.0" style="-fx-background-color: #F8F8F8;" stylesheets="@../Classes/application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserOption2">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox prefHeight="61.0" prefWidth="311.0" spacing="11.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="387.0" text="Frames" textFill="#696464" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="12.0" left="12.0" top="6.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Classes/icons/icons8-frame-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="12.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <BorderPane BorderPane.alignment="CENTER">
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TitledPane animated="false" text="Controllers" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <VBox layoutX="18.7" layoutY="33.7" prefHeight="54.0" prefWidth="294.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label alignment="TOP_LEFT" prefHeight="22.0" prefWidth="297.0" text="CAN-1 :&lt;USB To CAN V2 Automative&gt;" textOverrun="CLIP" VBox.vgrow="ALWAYS">
+                                                   <graphic>
+                                                      <ImageView fitHeight="19.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Classes/icons/icons8_ok_48px.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Label>
+                                                <Label prefHeight="22.0" prefWidth="297.0" text="CAN-2 :&lt;USB To CAN V2 Automative&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="19.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Classes/icons/icons8_ok_48px.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </TitledPane>
+                              <TitledPane animated="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Controller details" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <content>
+                                    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="407.0" prefWidth="313.0">
+                                       <children>
+                                          <GridPane layoutX="7.699999999999999" layoutY="15.7" prefHeight="379.0" prefWidth="316.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="159.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.99998168945314" minWidth="10.0" prefWidth="116.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="NEVER" />
+                                              <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                              <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="ALWAYS" />
+                                                <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="ALWAYS" />
+                                                <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="ALWAYS" />
+                                                <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="ALWAYS" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label alignment="TOP_LEFT" prefHeight="22.0" prefWidth="76.0" text="Name">
+                                                   <padding>
+                                                      <Insets left="12.0" top="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Arial Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="22.0" prefWidth="76.0" text="Statistics" GridPane.rowIndex="2">
+                                                   <padding>
+                                                      <Insets left="12.0" top="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Arial Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="22.0" prefWidth="76.0" text="Busload" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="12.0" top="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Arial Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="22.0" prefWidth="76.0" text="Hardware" GridPane.rowIndex="5">
+                                                   <padding>
+                                                      <Insets left="12.0" top="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Arial Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="22.0" prefWidth="76.0" text="Features" GridPane.rowIndex="10">
+                                                   <padding>
+                                                      <Insets left="12.0" top="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Arial Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="CAN-1 " textOverrun="CLIP" GridPane.columnIndex="1" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="175 kbit/s" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="Receive Counter       " textOverrun="CLIP" GridPane.rowIndex="3" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="117.0" text="Error Counter            " textOverrun="CLIP" GridPane.rowIndex="4" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="Controller                " textOverrun="CLIP" GridPane.rowIndex="6" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="Serial Number         " textOverrun="CLIP" GridPane.rowIndex="7" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="Revision                   " textOverrun="CLIP" GridPane.rowIndex="8" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="Driver Version          " textOverrun="CLIP" GridPane.rowIndex="9" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="Standard &amp; Extended" textOverrun="CLIP" GridPane.rowIndex="11" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="Error frame reception" textOverrun="CLIP" GridPane.rowIndex="12" />
+                                                <Label alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" prefHeight="46.0" prefWidth="159.0" text="Delayed transmission" textOverrun="CLIP" GridPane.rowIndex="13" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="65" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="0" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="Bosh_C_CAN" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="HW371524" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="1.5" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="201.0" text="4.0.65.0" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                             </children>
+                                          </GridPane>
+                                       </children></AnchorPane>
+                                 </content>
+                              </TitledPane>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+               </left>
+               <center>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="346.0" prefWidth="614.0">
+                     <children>
+                        <AnchorPane id="custom-fieldset" maxHeight="310.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="305.0" prefWidth="606.0" style="-fx-background-color: #ffffff;" VBox.vgrow="ALWAYS">
+						    <children>
+						        <Label layoutX="20.0" layoutY="-15.0" style="-fx-background-color: white; -fx-padding: 7px;" text="Frame Settings" textFill="#4083e7">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Label>
+                              <VBox layoutX="18.0" layoutY="20.0" minHeight="-Infinity" prefHeight="191.0" prefWidth="565.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="18.0">
+                                 <children>
+                                    <HBox prefHeight="36.0" prefWidth="557.0">
+                                       <children>
+                                          <Label text="Available ports :" HBox.hgrow="ALWAYS">
+                                             <padding>
+                                                <Insets top="3.0" />
+                                             </padding>
+                                          </Label>
+                                          <ComboBox fx:id="serialPortComboBox" prefWidth="150.0">
+                                             <HBox.margin>
+                                                <Insets left="7.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                          <Label fx:id="noPortLabel" text="No port is selected" textFill="RED" visible="false">
+                                             <padding>
+                                                <Insets left="12.0" top="3.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="11.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox prefHeight="36.0" prefWidth="557.0">
+                                       <children>
+                                          <Label prefHeight="21.0" prefWidth="84.0" text="Frame Type :" HBox.hgrow="ALWAYS">
+                                             <padding>
+                                                <Insets top="3.0" />
+                                             </padding>
+                                          </Label>
+                                          <ComboBox fx:id="frameTypeComboBox" prefHeight="26.0" prefWidth="151.0">
+                                             <HBox.margin>
+                                                <Insets left="7.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                          <Label fx:id="noFrameTypeLabel" text="No Frame type is selected" textFill="RED">
+                                             <padding>
+                                                <Insets left="12.0" top="3.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="143.0" prefWidth="578.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label fx:id="errorLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="409.0" text="Note" textAlignment="CENTER" textFill="RED" visible="false">
+                                             <padding>
+                                                <Insets left="9.0" top="-16.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Arial Bold" size="18.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="577.0" text="Frame Format" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <GridPane id="GridPane1" blendMode="DARKEN" gridLinesVisible="true">
+          <columnConstraints>
+              <!-- Define your column constraints here -->
+              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+              <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" />
+                                                <ColumnConstraints maxWidth="113.8000244140625" minWidth="30.0" prefWidth="30.0" />
+                                                <ColumnConstraints maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+                                                <ColumnConstraints maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints hgrow="ALWAYS" />
+                                                <ColumnConstraints maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                                                <ColumnConstraints maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+                                                <ColumnConstraints maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+                                                <ColumnConstraints maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+                                                <ColumnConstraints maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+              <!-- Add more column constraints as needed -->
+          </columnConstraints>
+          <rowConstraints>
+              <!-- Define your row constraints here -->
+              <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              <!-- Add more row constraints as needed -->
+          </rowConstraints>
+          <VBox.margin>
+              <Insets top="11.0" />
+          </VBox.margin>
+          <children>
+              <Label alignment="CENTER" prefHeight="18.0" prefWidth="31.0" text="SOF" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+              <TextField editable="false" prefHeight="1.0" prefWidth="100.0" promptText="1" text="0" GridPane.rowIndex="1" />
+      
+              <!-- Add more labels and text fields for other data fields -->
+              <Label alignment="CENTER" prefHeight="18.0" prefWidth="120.0" text="Identifier" textAlignment="CENTER" GridPane.columnIndex="1" />
+              <TextField fx:id="IDENTIFIERTextField" alignment="CENTER" editable="false" text="10001000110" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      
+              <Label alignment="CENTER" prefHeight="18.0" prefWidth="120.0" text="RTR" textAlignment="CENTER" GridPane.columnIndex="2" />
+              <TextField fx:id="rtrTextField" alignment="CENTER" editable="false" prefHeight="23.0" prefWidth="230.0" promptText="2" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      
+              <!-- Add more labels and text fields for the missing data fields -->
+              <Label alignment="CENTER" prefHeight="18.0" prefWidth="120.0" text="IDE" textAlignment="CENTER" GridPane.columnIndex="3" />
+              <TextField alignment="CENTER" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      
+              <Label alignment="CENTER" prefHeight="18.0" prefWidth="120.0" text="R" textAlignment="CENTER" GridPane.columnIndex="4" />
+              <TextField alignment="CENTER" editable="false" text="0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      
+              <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="120.0" text="DLC" textAlignment="CENTER" GridPane.columnIndex="5" />
+              <TextField fx:id="DLCTextField" alignment="CENTER" editable="false" text="0001" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      
+              <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="120.0" text="Data" textAlignment="CENTER" GridPane.columnIndex="6" />
+              <TextField fx:id="dataTextField" alignment="CENTER" text="00010010" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      
+              <Label alignment="CENTER" prefHeight="18.0" prefWidth="120.0" text="CRC" textAlignment="CENTER" GridPane.columnIndex="7" />
+              <TextField alignment="CENTER" editable="false" text="01000110000000" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+      
+              <Label alignment="CENTER" prefHeight="18.0" prefWidth="120.0" text="DEL" textAlignment="CENTER" GridPane.columnIndex="8" />
+              <TextField alignment="CENTER" editable="false" text="0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+      
+              <Label alignment="CENTER" prefHeight="18.0" prefWidth="120.0" text="ACK" textAlignment="CENTER" GridPane.columnIndex="9" />
+              <TextField alignment="CENTER" editable="false" text="0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+      
+              <Label alignment="CENTER" prefHeight="18.0" prefWidth="120.0" text="DEL" textAlignment="CENTER" GridPane.columnIndex="10" />
+              <TextField alignment="CENTER" editable="false" text="1" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+      
+              <Label alignment="CENTER" prefHeight="18.0" prefWidth="120.0" text="EOF" textAlignment="CENTER" GridPane.columnIndex="11" />
+              <TextField alignment="CENTER" editable="false" text="1111111" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+          </children>
+                                             <effect>
+                                                <Blend mode="MULTIPLY" />
+                                             </effect>
+                                             <cursor>
+                                                <Cursor fx:constant="DEFAULT" />
+                                             </cursor>
+      </GridPane>
+                                          <GridPane prefHeight="73.0" prefWidth="581.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="507.999951171875" />
+                                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="175.20001220703125" minWidth="10.0" prefWidth="69.60004882812501" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints maxHeight="30.4" minHeight="28.0" prefHeight="23.9999755859375" vgrow="SOMETIMES" />
+                                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="28.8000244140625" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="76.0" text="Note" textFill="RED">
+                                                   <padding>
+                                                      <Insets left="9.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Arial Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button id="Sendframebutton" alignment="CENTER" contentDisplay="TOP" maxHeight="30.0" maxWidth="1.7976931348623157E308" minHeight="30.0" mnemonicParsing="false" onAction="#handleSendButtonAction" prefHeight="30.0" styleClass="Sendframebutton" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="1">
+                                                   <graphic>
+                                                      <Label text="Send Can Frame    " textFill="WHITE">
+                                                         <graphic>
+                                                            <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../Classes/icons/icons8-send-90.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </graphic>
+                                                   <GridPane.margin>
+                                                      <Insets />
+                                                   </GridPane.margin>
+                                                </Button>
+                                                <VBox prefHeight="6.0" prefWidth="508.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label maxWidth="1.7976931348623157E308" text="- The frame format is editable and supports format changes in accessible fields. ">
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                         <padding>
+                                                            <Insets bottom="4.0" left="10.0" top="3.0" />
+                                                         </padding>
+                                                      </Label>
+                                                      <Label maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="506.0" text="- Please check if the hardware supports the updated format or not.">
+                                                         <padding>
+                                                            <Insets bottom="3.0" left="10.0" />
+                                                         </padding>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                                <Button id="Sendframebutton" alignment="CENTER" contentDisplay="TOP" maxHeight="30.0" maxWidth="1.7976931348623157E308" minHeight="30.0" mnemonicParsing="false" onAction="#showChart" prefHeight="30.0" styleClass="Sendframebutton" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <graphic>
+                                                      <Label text="RealTime animation" textFill="WHITE">
+                                                         <graphic>
+                                                            <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../Classes/icons/icons8-send-90.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </GridPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </VBox>
+
+
+                                 </children>
+                              </VBox>
+						    </children>
+						</AnchorPane>
+
+                        <TableView fx:id="frameTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="143.0" prefWidth="606.0" stylesheets="@../Classes/application.css" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+                           <columns>
+                              <TableColumn fx:id="indexColumn" maxWidth="84.80001986026764" minWidth="83.0" prefWidth="84.80001986026764" text="INDEX" />
+                              <TableColumn fx:id="identifierColumn" maxWidth="84.80001986026764" minWidth="83.0" prefWidth="84.80001986026764" text="IDENTIFIER" />
+                              <TableColumn fx:id="dlcColumn" maxWidth="1.7976931348623157E308" minWidth="108.0" prefWidth="108.0" text="DLC" />
+                              <TableColumn fx:id="dataColumn" maxWidth="1.7976931348623157E308" minWidth="144.0001220703125" prefWidth="144.0001220703125" text="DATA" />
+                              <TableColumn fx:id="frameNameColumn" maxWidth="1.7976931348623157E308" prefWidth="152.800048828125" text="FRAME NAME" />
+                           </columns>
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="2.0" />
+                     </padding>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
