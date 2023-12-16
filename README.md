@@ -1,4 +1,4 @@
-# CANlyzer
+# CANalyzer
 
 ## Introduction
 
